@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- li중에서 괄호안에 들어간 조건에서 적용됨 -->
+    <style>
+        li:nth-child(odd){
+            background-color: blue;
+        }
+        li:nth-child(even){
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- li가 이렇게 되있어도 2번째 li로 되는게 아니라 
+    부모의 자식으로써의 순서로 카운팅되는것임 그래서 아래 li들은 모두 홀수로 취급급 -->
+    <ul>
+        <li>아이템 1</li>
+        <p>문단 1</p>
+        <li>아이템 2</li>
+        <p>문단 2</p>
+        <li>아이템 3</li>
+    </ul>
+
+
+    
+    <h2>li </h2>
+        
+    <ul>
+        <li>아이템 1</li>       
+        <li>아이템 2</li>       
+        <li>아이템 3</li>
+    </ul>
+    
+</body>
+</html>

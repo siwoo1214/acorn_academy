@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Nanum Pen Script', cursive;
+        }
+        .wrap{
+            width: 500px;
+            padding: 10px;
+            border: 1px solid rgb(161, 179, 236);
+            margin: 0 auto;
+            /* height: 800px; 제거할 부분 */
+            border-radius: 5%;
+        }
+
+        .goods-info{
+            width: 80%;
+            /* height: 300px; */
+            /* border: 1px solid black; */
+            margin: 0 auto;
+            
+        }
+        /* 이미지영역 배경채우기 */
+        .img{
+            /* background-color: steelblue; */
+            width: 350px;
+            height: 350px;
+            margin: 0 auto;
+            background-image: url(https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=848e0c78-0595-4cee-b9b7-f17c17992e9e);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .order-info{
+            width: 85%;
+            /* height: 300px; */
+            /* border: 1px solid black; */
+            margin: 0 auto;
+        }
+
+        /* .order-info>div{
+            border: 1px solid black;
+        } */
+
+        input[type="text"]{
+            width: 100%; 
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        select{
+            width: 100%;
+            padding: 10px;
+        }
+
+        .btn{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .price-info{
+            font-size: 24px;
+            font-weight: bold;
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체영역 -->
+    <div class="wrap">
+        <!-- 상품정보 영역 -->
+        <div class="goods-info">
+            <!-- 상품이미지 -->
+            <div class="img"></div>
+            <!-- 상품정보 -->
+            <div>
+                <h1>대관령 황태</h1>
+                <p>겨울 내내 녹았다 얼었다를 반복한  맛 좋은 대관령 황태입니다.</p>
+                <p>가격 :<span class="price-info">3000원/10마리</span></p>
+            </div>
+        </div>
+        <!-- 주문정보 영역 -->
+        <div class="order-info">
+            <div>--주문내역--</div>
+            <div> 주문자이름 <input type="text"></div>
+            <div> 수량 
+                <select>
+                    <option>선택하세요</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div>주문금액 <input type="text"></div>
+            <div>전화번호 <input type="text"></div>
+            <div><button class="btn">order</button></div>
+        </div>
+    </div>
+</body>
+</html>

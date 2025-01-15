@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 900px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        .table-wrap{
+            /* height: 600px; */
+            /* border: 1px solid black; */
+            padding: 20px;
+        }
+
+        .order-wrap{
+            /* height: 200px; */
+            /* border: 1px solid black; */
+            padding: 20px;
+        }
+
+        /**/
+        table{
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-top: 50px;
+            font-size: 12px;
+        }
+
+        td{
+            border: 1px solid black;
+            width: 20%;
+        }
+
+        tr{
+            height: 40px;
+        }
+
+        table caption{
+            font-weight: bold;
+            font-size: 20px;
+            padding: 30px;
+        }
+
+        img{
+            width: 60px;
+            height: 60px;
+        }
+
+        td:nth-child(1), td:nth-child(2){
+            text-align: center;
+        }
+
+        #order{
+            margin-top: 20px;
+            padding-right: 5px;
+            text-align: right;
+            font-size: 12px;
+            border: 1px solid green;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .order-wrap button{
+            font-size: 12px;
+            padding: 10px;
+            background-color: rgb(155, 201, 253);
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #order-price{
+            color:red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- table 영역 -->
+        <div class="table-wrap">
+            <table>
+                <caption>CART LIST <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8nCzdPgFi5PUKzMTRTNO4pYMstTaZngDbg&s"></caption>
+                <!-- 제목줄 -->
+                <thead>
+                    <tr>
+                        <th>선택</th>
+                        <th>상품명</th>
+                        <th>가격</th>
+                        <th>구매수량</th>
+                        <th>구매가</th>
+                    </tr>
+                </thead>
+
+                <!-- 내용줄 -->
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>헤드폰</td>
+                        <td>30000원</td>
+                        <td><input type="text"></td>
+                        <td>30000원</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>헤드폰</td>
+                        <td>30000원</td>
+                        <td><input type="text"></td>
+                        <td>30000원</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>헤드폰</td>
+                        <td>30000원</td>
+                        <td><input type="text"></td>
+                        <td>30000원</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 주문금액 영역 -->
+        <div class="order-wrap">
+            <div><button>선택 삭제</button></div>
+            <div id="order">합계 <span id="order-price">90000</span>원</div>
+        </div>
+    </div>
+</body>
+</html>

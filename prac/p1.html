@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>압셍트 판매위촉</title>
+    <style>
+        .wrap{
+            border: 3px solid #13C7A3;
+            height: 800px;
+            width: 500px;
+            margin: 0 auto;
+            border-radius: 5%;
+            padding: 10px;
+        }
+        .info{
+            /* border: 1px solid #13C7A3; */
+            height: 400px;
+            width: 85%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .subject{
+            width: 300px;
+            height: 250px;
+            background-image: url(https://image.idus.com/image/files/35e7fa695c6644b192157a25379ebb62.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+        .orderer{
+            /* border: 1px solid #13C7A3; */
+            margin: 0 auto;
+            /* height: 500px; */
+        }
+        .abs{
+            background-color: #13C7A3;
+            width: 60px;
+            margin: 20px auto;
+            }
+        input{
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        select{
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- 물건 정보 -->
+        <div class="info">
+            <div class="subject"></div>
+            <div>
+                <h3 class="abs">압셍트</h3>
+                <p>반 고흐가 마시고 귀를 잘랐다던 그 <strong>전설의 술</strong><br>
+                여러분이 마시면 어떻게 될까요?</p>
+                <p>price : <span style="color: red;">5000won</span></p>
+            </div>
+        </div>
+        
+        <!-- 주문자 정보 -->
+        <div class="orderer">
+            <div>
+                <div>주문자 이름 <input type="text" placeholder="이름을 입력하세요"></div>
+            </div>
+            <div>
+                <div>수량 
+                    <select>
+                        <option>선택하시오</option>
+                        <option>1병</option>
+                        <option>2병</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
