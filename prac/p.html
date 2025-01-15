@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 600px;
+        }
+
+        .fst {
+            border: 3px solid rgb(219, 20, 60, 0.5);
+            /*height: 500px;*/
+
+            box-sizing: border-box;
+        }
+
+        .snd {
+            border: 3px solid #1E96FF;
+            height: 250px;
+            box-sizing: border-box;
+        }
+
+        .thd {
+            border: 3px solid #1DD1AD;
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        button{
+            background-color: #1E96FF;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="fst">
+        <h5>안녕하세요</h5>
+        <img src="https://t1.daumcdn.net/cfile/tistory/995701465BBD58451A" alt="happy_family">
+        <div class="snd">
+            <p>반갑습니다</p>
+            <a href="javascript:alert('누르란다고 진짜 눌렀어요?')">여기를 눌러보세요</a>
+            <div class="thd">
+                <p id="hi">hello</p>
+            </div>
+        </div>
+    </div>
+    <p id="para">색깔이 바뀔 글</p>
+    <button onclick="changeColor('green');">버튼</button>
+    <button onclick="changeColor('red');">버튼</button>
+    <script>
+        document.getElementById('demo').innerHTML="nice to mett you";
+        function changeColor(newcolr){
+            let elem = document.getElementById("para");
+            elem.style.color = newcolr;
+        }
+    </script>
+</body>
+
+</html>

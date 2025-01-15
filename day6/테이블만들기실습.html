@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table-container{
+            border: 1px solid black;
+            margin: 0 auto;
+            height: 500px;
+            width: 600px;
+        }
+
+        tr{
+            width: 100%;
+            display: flex;
+        }
+
+        th{
+            width: 100px;
+            border: 1px solid black;
+            
+        }
+
+        td{
+            width: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <caption>로그인 구현 연습</caption>
+            <tr>
+                <th>이름</th>
+                <td><input type="text" placeholder="이름을 입력하시오."></td>
+            </tr>
+            <tr>
+                <th>전화번호</th>
+                <td><input type="text" placeholder="전화번호의 -를 포합해서 입력하시오."></td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td><input type="text" placeholder="이메일 앞자리">@<input type="text" placeholder="이메일 뒷자리" list="domains"></td>
+                <datalist id="domains">
+                    <option>naver.com</option>
+                    <option>google.com</option>
+                    <option>daum.net</option>
+                </datalist>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td><input type="text" placeholder="주소 입력"></td>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td><input type="text" placeholder="이름을 입력하시오."></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

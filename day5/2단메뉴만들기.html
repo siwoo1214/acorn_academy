@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+
+        .menu{
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .menu-item{
+            width: 25%;
+            height: 40px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 40px;
+            background-color: rgb(175, 214, 250);
+            color: white;
+            position: relative;
+        }
+
+        .menu-item:hover{
+            background-color: rgb(144, 144, 144);
+        }
+
+        .hidden-menu{
+            display: none; /*안보이게 만들기*/
+            width: 50%;
+            background-color: rgb(127, 159, 239);
+            border: 1px solid beige;
+            padding: 5px;
+            box-sizing: border-box;
+
+            /* 상위메뉴를 기준으로 배치 */
+            position: absolute;
+            left: 0px;
+            top: 40px;
+
+            z-index: 2;  /*뒤에 있는거랑 좀 떠있는 느낌을 주기위해서*/
+        }
+
+        .menu-item:hover .hidden-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu-item">메뉴1
+            <!-- 하위메뉴 -->
+            <ul class="hidden-menu">
+                <li>하위메뉴1</li>
+                <li>하위메뉴2</li>
+                <li>하위메뉴3</li>
+            </ul>
+        </li>
+        <li class="menu-item">메뉴2
+            <!-- 하위메뉴 -->
+            <ul class="hidden-menu">
+                <li>하위메뉴1</li>
+                <li>하위메뉴2</li>
+                <li>하위메뉴3</li>
+            </ul>
+        </li>
+        <li class="menu-item">메뉴3
+            <!-- 하위메뉴 -->
+            <ul class="hidden-menu">
+                <li>하위메뉴1</li>
+                <li>하위메뉴2</li>
+                <li>하위메뉴3</li>
+            </ul>
+        </li>
+        <li class="menu-item">메뉴4</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, totam. Aut dolorum voluptatum sequi. Molestias consectetur modi facere sint, ducimus quam nesciunt perspiciatis laboriosam eos minima iusto deserunt perferendis distinctio.
+    Numquam tempore ipsum quasi aliquid vitae a quia modi dolorem itaque sed, magni aliquam similique perspiciatis culpa distinctio temporibus, eius ducimus, debitis cupiditate. In explicabo aperiam error! Obcaecati, ipsam odio.
+    Totam nesciunt, accusamus ad ex temporibus, numquam quos praesentium assumenda fuga culpa similique. Nam earum accusamus hic. Laudantium incidunt rem distinctio alias enim! Tenetur, pariatur alias vitae totam itaque beatae.
+    In praesentium, ratione voluptatum modi maiores voluptate quasi provident dolorum sed. Soluta aperiam eligendi officia. Quisquam amet minima, quod accusantium et repellendus sint porro officiis culpa similique iure, aperiam enim!
+    Vero maxime ducimus, ea iure, facilis aliquid sit rerum sint recusandae soluta unde amet porro non dicta labore. Iusto a sunt accusamus rem laudantium et totam quasi in fugit consequuntur!
+    Quaerat esse minus illum enim excepturi voluptatibus aspernatur repellat accusantium possimus dolore beatae nostrum dolores distinctio magni exercitationem iure fugit, corrupti veritatis maxime quis saepe eveniet, officia alias nisi? Rem.
+    Cum maxime architecto assumenda ea voluptates praesentium atque cupiditate consectetur sit odio iste nemo magni, animi fuga reprehenderit. Ducimus omnis facilis mollitia aperiam saepe quam libero voluptatum tempora reprehenderit quaerat!
+    Doloribus laboriosam id error sequi eius quaerat voluptates est, cum eligendi ab nisi a beatae aliquam quo totam deleniti repellendus enim esse sit, accusamus fugiat tempore quis! Recusandae, nostrum nihil.
+    Exercitationem harum numquam libero cumque eius culpa aspernatur, explicabo similique? Ut inventore, voluptatum, repudiandae quam at deleniti totam ipsam a vero autem tempore eum laudantium, vitae nemo? Laborum, omnis repellat!
+    Id dolor accusamus ea itaque est odit eligendi natus et beatae quod, sequi minus dolore placeat maxime enim molestiae amet! Modi commodi nisi fugiat expedita maiores ipsa magnam error deserunt.</p>
+</body>
+</html>

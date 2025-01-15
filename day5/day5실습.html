@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            border: 1px solid black;
+        }
+
+        .documents{
+            height: 200px;
+            border: 1px solid black;
+            background-image: url(https://i.namu.wiki/i/Xf40ITHK4FVjsjWXvqJaiEzGegbcz9zOPYT7HnOk1sLidlbEMzRJ3Xah5kdgo3DS0Ysb8RMC_JsQKIaOpdOL4Q.svg);
+            background-position:center;
+            background-size: contain;
+            background-repeat: repeat;
+            text-align: center;
+            /* display: flex;
+            align-items: center; */
+            position: relative;
+        }
+
+        .name{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        ul{
+            list-style: none;
+            width: 100px;
+        }
+
+        .more-info{
+            margin-top: 110px;
+            padding: 0px;
+            /* border: 1px solid black; */
+            position: absolute;
+            left: 47%;
+            bottom: 5px;
+        }
+
+        .more-info:hover{
+            cursor: pointer;
+        }
+
+        .more-info:hover .hidden-info{
+            display: block;
+            padding: 0px;
+            padding-top: 30px;
+            
+        }
+
+        .hidden-info{
+            display: none;
+            position: absolute;
+            top: 20px;
+        }
+
+        .hidden-info li{
+            margin-top: 10px;
+        }
+
+        .index{
+            border: 1px solid black;
+            /* height: 600px; */
+            /* margin-top: 30px; */
+            margin-left: 250px;
+            margin-right: 300px;
+            width: 200px;
+            height: 350px;
+            /* margin-bottom: 100px; */
+            display: inline-block;
+        }
+
+        .player-info{
+            border: 2px solid black;
+            display: inline-block;
+            width: 400px;
+            height: 600px;
+            background-image: url(https://i.namu.wiki/i/jdx4qa9wbplX0XeKRaATro5eUlifE-n6sSGHhvpk8gGvM9zlT6x123k7Q-MVIALu7rho1rR05QqmrUvfOWZyWsjcEc0C0y0NM6697E1UUc49SId1xKFMvTOfGLM73MI-tYooG9kgfG-CimzSEw8ILA.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            /* text-align: center; */
+            position: relative;
+            
+        }
+
+        .name-tag{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(255, 182, 224);
+            margin: 0px;
+            height: 55px;
+            padding-top: -5px;
+            font-size: 14px;
+            border: 1px solid black;
+        }
+
+        .space{
+            display: flex;
+            padding-top: 30px;
+        }
+
+        .power{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="documents">
+            <p class="name">Lionel Messi</p>
+            <ul class="more-info">
+                <li>[더보기]
+                    <ul class="hidden-info">
+                        <li>클럽</li>
+                        <li>국가대표</li>
+                        <li>수상경력</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="space">
+            <div class="index">
+                <ol>
+                    <li>개요</li>
+                    <li>유년기</li>
+                    <li>선수경력
+                        <ol>
+                            <li>클럽 경력</li>
+                            <li>국가대표 경력</li>
+                        </ol>
+                    </li>
+                    <li>플레이 스타일</li>
+                    <li>기록</li>
+                    <li>평가
+                        <ol>
+                            <li>매체</li>
+                        </ol>
+                    </li>
+                    <li>관련 언사</li>
+                    <li>별명</li>
+                    <li>논란 및 사건사고</li>
+                    <li>악성 팬덤</li>
+                    <li>여담</li>
+                    <li>둘러보기</li>
+                </ol>
+            </div>
+    
+            <div class="player-info">
+                <p class="name-tag"> <span class="power">인터 마이애미 CF No. 10 C </span><br><strong>리오넬 메시</strong> <br> Lionel Messi</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="" class="개요">1. 개요</a>
+            <p>아르헨티나의 인터 마이애미 CF 소속 축구 선수. 포지션은 공격수. 현재 마이애미와 아르헨티나 대표팀의 주장을 역임하고 있다.
+
+                발롱도르, FIFA 올해의 선수, 월드컵 골든볼, 대륙컵 MVP, 유러피언 골든슈 최다 수상자[14]이자 역대 최다 공격포인트[15], 최다 우승[16] 기록자이다.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
