@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        비교연산자 => 참, 거짓 반환
+        */
+
+        let sul1 = 10;
+        let sul2 = 3;
+
+        console.log(sul1>sul2); //조건이 만족하면 true
+        console.log(sul1>=sul2);
+        console.log(sul1==sul2); //같으면 true
+        console.log(sul1!=sul2); //같지 않으면 true
+
+        //엄격한 비교  ===,!==
+        let a=10;
+        let b="10";
+        console.log(a==b);   //자바스크립트는 이 결과가 같다고 계산하게됨
+        console.log(a===b);  //값, type까지 같아야 true
+        //===으로 엄격한 비교를 해서 판단해야함 (값, type을 모두 비교)
+    </script>
+</body>
+</html>

@@ -15,13 +15,13 @@
         for(let i=0; i<subjects.length; i++){
             let score=parseInt(prompt(`${subjects[i]}과목의 점수를 입력하시오`));
 
-            scores.push(score);
+            scores[i]=score;
             total+=score;
         }
 
         let avg = total / subjects.length;
 
-        alert(`${name}님의 총점은 ${total}점이고 평균은 ${avg}점 입니다. 참고로 국어는 ${scores[0]}점 입니다.`)
+        alert(`${name}님의 총점은 ${total}점이고 평균은 ${avg}점 입니다.`);
     </script>
 </body>
 </html>
