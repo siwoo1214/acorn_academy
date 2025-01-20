@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dan = Number(prompt("몇단을 출력하시겠습니까?"))
+
+        function gugu(dan){
+            for(let i=1; i<=9; i++){
+                document.write(`${dan} * ${i} = `+dan*i+"<br>")
+            }
+        }
+
+        gugu(dan);
+    </script>
+</body>
+</html>

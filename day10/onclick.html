@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button Example</title>
+    <style>
+        button {
+            padding: 10px;
+            background-color: coral;
+            border: none;
+            border-radius: 10px;
+            color: rgb(242, 248, 253);
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        #image-container img{
+            display: none;
+        }
+
+        #image-container img.visible{
+            display: block;
+            margin-top: 10px;
+            width: 80%;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="click_prac">안녕하세요</button>
+    <div id="image-container">
+        <img src="https://i.namu.wiki/i/DcZfX8bwT5mGo_3efJfPjM2jSYot_wV6jiNVh_YLeLpmWkkkTbgYFOOFFHph0Fcney1sFRrN7IN4ge_Gox4AXQ.webp" alt="chill guy">
+    </div>
+
+    <script>
+        let btn = document.getElementById("click_prac");
+        let img = document.querySelector("#image-container img");
+
+        btn.addEventListener("click", ()=>{
+            img.classList.toggle("visible");
+            btn.style.backgroundColor = img.classList.contains("visible")?"grey":"coral";
+        });
+    </script>
+</body>
+</html>

@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Starbucks</title>
 </head>
 
 <body>
+    <!-- 입력 o, 반환 o -->
     <h2>스타벅스 메뉴 주문</h2>
     <p id="order-result"></p>
     <script>
+        
         alert("메뉴를 주문하세요\n\n아메리카노 4500원\n플랫화이트 5600원\n자바칩 프라푸치노 6500원");
 
         let orders = [];
@@ -32,7 +34,7 @@
                     alert("잘못된 메뉴입니다. 다시 입력해주세요.");
                     return null;
             }
-            return { sort, num, price };
+            return {sort, num, price};
         }
 
         while (true) {
@@ -48,12 +50,13 @@
             }
 
             let currentOrder = order(sort, num);
+            console.log(currentOrder);
             if (currentOrder) {
                 orders.push(currentOrder);
             }
         }
 
-        orders.forEach(order => {
+        orders.forEach( (order) => {
             totalPrice += order.price;
         });
 
