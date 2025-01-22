@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //자바스크립트가 제공하는 내장객체(Math => 수학관련 기능 제공, Date => 날짜에 관련된 기능 제공, String => 문자열에 관련된 기능 제공)
+        let current = new Date();
+        console.log(current);
+        let getyear = current.getFullYear()
+        let getmonth = current.getMonth()+1 //getMonth는 +1해서 반환해줘야함
+        let getdate = current.getDate()
+        let getday = current.getDay()  //일,월,화,수 0부터 시작하는 인덱스 형태로 반환됨
+        let gethour = current.getHours
+
+        let dats = ['일요일','월요일','화요일','수요일','목요일','금요일','토요일',];
+        console.log(getyear, getmonth, getdate,dats[getday])
+
+        
+    </script>
+</body>
+</html>

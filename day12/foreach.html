@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ['가', '나', '다', '라', '마']
+        const info_arr = [
+            {
+                name: "박시우",
+                age: 26,
+                major: "bigdata",
+                saymyname:function(yourname){
+                    return yourname;
+                }
+            },
+            {
+                name: "최효림",
+                age: 26,
+                major: "envi",
+                saymyname:function(yourname){
+                    return yourname;
+                }
+            },
+            {
+                name: "최완빈",
+                age: 26,
+                major: "bigdata",
+                saymyname:function(yourname){
+                    return yourname;
+                }
+            }
+        ];
+
+        for(let i of info_arr){
+            console.log(`당신의 이름은 ${i.saymyname(i.name)}`)
+        }
+
+        info_arr.forEach(function (info) {
+            console.log(info.name + "는 " + info.age + "살이고 전공은 " + info.major + "입니다.");
+        })
+
+        let newBig = [];
+        let big_data = info_arr.filter(function (infos) {
+            return infos.major == "bigdata";
+        }).map((infos) => { return infos.name });
+        console.log(big_data)
+
+        arr.forEach((a, b) => {
+            console.log(a + "는 " + (b + 1) + "번째 입니다")
+        })
+
+        arr.forEach(function (q, w) {
+            console.log(q, w);
+        })
+    </script>
+</body>
+
+</html>

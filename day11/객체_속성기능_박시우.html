@@ -37,11 +37,20 @@
 
                     return numericGDP / numericPopulation;
                 },
-                isKorean: function () {
-                    return this.countryName === "korea" ? "한국인입니다" : "외국인입니다";
+                nationality: function (nation) {
+                    switch(nation){
+                        case "KOREA":
+                            return "선생님은 한국인이십니다. 안녕하세요?";
+                        case "USA":
+                            return "you are american. hello?";
+                        case "JAPAN":
+                            return "あなたは日本人ですこんにちは";
+                        case "GERMANY":
+                            return "Hallo, du bist Deutscher";
+                    }
                 },
                 strikethrough:function(){
-                    return "==========================";
+                    return "============================================";
                 }
             },
             {
@@ -71,11 +80,20 @@
 
                     return numericGDP / numericPopulation;
                 },
-                isKorean: function () {
-                    return this.countryName === "korea" ? "한국인입니다" : "외국인입니다";
+                nationality: function (nation) {
+                    switch(nation){
+                        case "KOREA":
+                            return "선생님은 한국인이십니다. 안녕하세요?";
+                        case "USA":
+                            return "you are american. hello?";
+                        case "JAPAN":
+                            return "あなたは日本人ですこんにちは";
+                        case "GERMANY":
+                            return "Hallo, du bist Deutscher";
+                    }
                 },
                 strikethrough:function(){
-                    return "==========================";
+                    return "============================================";
                 }
             },
             {
@@ -105,11 +123,20 @@
 
                     return numericGDP / numericPopulation;
                 },
-                isKorean: function () {
-                    return this.countryName === "korea" ? "한국인입니다" : "외국인입니다";
+                nationality: function (nation) {
+                    switch(nation){
+                        case "KOREA":
+                            return "선생님은 한국인이십니다. 안녕하세요?";
+                        case "USA":
+                            return "you are american. hello?";
+                        case "JAPAN":
+                            return "あなたは日本人ですこんにちは";
+                        case "GERMANY":
+                            return "Hallo, du bist Deutscher";
+                    }
                 },
                 strikethrough:function(){
-                    return "==========================";
+                    return "============================================";
                 }
             },
             {
@@ -139,20 +166,29 @@
 
                     return numericGDP / numericPopulation;
                 },
-                isKorean: function () {
-                    return this.countryName === "korea" ? "한국인입니다" : "외국인입니다";
+                nationality: function (nation) {
+                    switch(nation){
+                        case "KOREA":
+                            return "선생님은 한국인이십니다. 안녕하세요?";
+                        case "USA":
+                            return "you are american. hello?";
+                        case "JAPAN":
+                            return "あなたは日本人ですこんにちは";
+                        case "GERMANY":
+                            return "Hallo, du bist Deutscher";
+                    }
                 },
                 strikethrough:function(){
-                    return "==========================";
+                    return "============================================";
                 }
             }
         ];
 
         for (const country of countries) {
-            console.log(`Country: ${country.countryName}`);
-            console.log(`인구 밀도: ${country.population_per_area().toFixed(2)} km²`);
+            console.log(`국가: ${country.countryName}`);
+            console.log(`인구 밀도: ${country.population_per_area().toFixed(2)} 명/km²`);
             console.log(`1인당 GDP: ${country.GDPlevel().toFixed(2)} USD/명`);
-            console.log(`Nationality: ${country.isKorean()}`);
+            console.log(`국적적: ${country.nationality(country.countryName)}`);
             console.log(country.strikethrough());
         }
     </script>

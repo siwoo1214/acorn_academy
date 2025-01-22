@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['금 30돈','5층 빌라','포르쉐'];
+
+        for(let i=0; i<arr.length; i++){
+            let item = arr[i];
+            console.log(item,i);
+        }
+
+        arr.forEach((value,num)=>{
+            console.log(value+"는 "+num+"번째 입니다")
+        })
+
+        function a(t,z){  //t는 배열의 요소, z는 인덱스
+            console.log(t,z+" 하이");
+        }
+
+        arr.forEach(a); //forEach내부에서 전달한 a함수 호출함, aa함수 호출하면서 배열의 요소값, 인덱스를 제공
+
+        arr.forEach(function(item,index,arrr){
+            console.log(item,index,arrr)
+        });
+
+        arr.forEach(function(a,b){
+            alert("안녕"+a+b)
+        })
+    </script>
+</body>
+</html>
