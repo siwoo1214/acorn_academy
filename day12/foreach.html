@@ -45,7 +45,6 @@
             console.log(info.name + "는 " + info.age + "살이고 전공은 " + info.major + "입니다.");
         })
 
-        let newBig = [];
         let big_data = info_arr.filter(function (infos) {
             return infos.major == "bigdata";
         }).map((infos) => { return infos.name });
