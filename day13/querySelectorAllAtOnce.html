@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function where(){
+        //     const region = document.querySelectorAll(".wrap");
+        //     region.forEach((regions)=>{
+        //         let items = regions.innerHTML;
+        //         console.log(items)
+        //     })
+        // }
+        function where() {
+            const dropdown = document.querySelector("select");
+            const selectedValue = dropdown.value;
+            alert(`당신의 거주지는 ${selectedValue}입니다.`);
+        }
+    </script>
+</head>
+<body>
+    <select>
+        <option value="서울">서울</option>
+        <option value="안양">안양</option>
+        <option value="광주">광주</option>
+        <option value="부산">부산</option>
+        <option value="인천">인천</option>
+        <option value="대전">대전</option>
+    </select>
+
+    <!-- <div class="wrap">서울</div>
+    <div class="wrap">안양</div>
+    <div class="wrap">광주</div>
+    <div class="wrap">부산</div>
+    <div class="wrap">인천</div>
+    <div class="wrap">대전</div> -->
+
+    <button onclick="where()">거주지</button>
+</body>
+</html>

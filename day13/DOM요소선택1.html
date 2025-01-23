@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(){
+            // alert("안녕하세요")
+            //변경하고 싶은 요소(element) 선택
+            let wrap = document.getElementById("wrap");
+
+            alert(wrap);
+            //내용 변경하기
+            wrap.innerHTML="새로운 내용";
+
+            //스타일 변경하기
+            wrap.style.width="100px";
+            wrap.style.height="100px";
+            wrap.style.backgroundColor="green";
+            wrap.style.lineHeight="100px"
+            wrap.style.margin="0 auto"
+        }
+
+        function unchange(){
+            let wrap = document.getElementById("wrap")
+            wrap.innerHTML="";
+
+            //style바꾸기
+            wrap.style.width="";
+            wrtap.style.height="";
+            wrap.style.lineHeight="";
+            wrap.style.backgroundColor="";
+        }
+    </script>
+</head>
+<body>
+
+    <h2>id로 선택하기</h2>
+    <h2>id가 wrap인 div 선택히여 스타일 변경하기</h2>
+    <div id="wrap"></div>
+    <button onclick="change()">클릭</button>
+    <button onclick="unchange()">스타일취소</button>
+</body>
+</html>

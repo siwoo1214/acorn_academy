@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names = ["김민환","김유민","박수경"];
+
+        console.log(names[0])
+        console.log(names[1])
+        console.log(names[2])
+
+        // 배열 -> 반복문
+
+        for(let i=0; i<names.length; i++){
+            console.log(names[i])
+        }
+
+        //foreach
+
+        names.forEach((a,b)=>{
+            alert(a,b);
+            alert("hi"+a);
+        })
+
+        names.forEach(function(a,b){
+            alert(a+"님은 "+b+"번째")
+        })
+
+        names.forEach(aaa);
+    </script>
+</body>
+</html>
