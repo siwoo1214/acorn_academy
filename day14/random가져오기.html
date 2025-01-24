@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const randomsu = Math.random(); //0에서부터 1미만의 임의의 실수를 반환
+        console.log(randomsu)
+
+        //원하는 범위의 난수 만들기 1~10, 0~9 뭐 이런거 만들기
+
+        //0~44
+        const ramdomsu2 = Math.random()*45+1;
+        console.log(ramdomsu2)
+
+        const result = Math.floor(ramdomsu2); //0부터 44 사이의 수  
+        const result2 = Math.floor(ramdomsu2)+1; //1부터 45사이의 수
+
+        //실수가 있다면 그것을 버리는 함수(바닥함수)
+        console.log(result)
+        console.log(result2)
+    </script>
+</body>
+</html>
