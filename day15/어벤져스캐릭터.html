@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100%;
+            height: 400px;
+            max-height: 200px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3개배치하기 1줄(1fr)에 */
+            grid-auto-rows: auto;  /* 줄바꿈을 자동으로 */
+            gap: 25px;
+            justify-content: center;
+            width: 900px;
+            margin: 0 auto;
+            position: relative;
+            top: 100px;
+        }
+        ul li {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: #eaeaea;
+            transition: 0.5s;
+        }
+        li:nth-child(1):hover{
+            background-color: #fb5858;
+            transform: scaleY(1.1);
+            color: rgb(222, 250, 209);
+        }
+        li:nth-child(2):hover{
+            background-color: #5adbf2;
+            transform: scaleY(1.1);
+            color: rgb(247, 255, 160);
+        }
+        li:nth-child(3):hover{
+            background-color: #f2ef5a;
+            transform: scaleY(1.1);
+            color: rgb(24, 24, 24);
+        }
+        li:nth-child(4):hover{
+            background-color: #343434;
+            transform: scaleY(1.1);
+            color: white;
+        }
+        li:nth-child(5):hover{
+            background-color: #2e9f3d;
+            transform: scaleY(1.1);
+            color: white;
+        }
+        li:nth-child(6):hover{
+            background-color: #7e3422;
+            transform: scaleY(1.1);
+            color: white;
+        }
+        p{
+            margin: 5px;
+        }
+        
+    </style>
+
+    <script>
+        function init() {
+            let characters = [
+                {url: "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201702/18/htm_20170218114544126552.jpg",
+                    name:"Iron Man",
+                    born:"1970년",
+                    from:"USA"
+                },
+                {url: "https://cdn.ikoreadaily.co.kr/news/photo/201602/222038_118170_2126.jpg",
+                    name:"Captain America",
+                    born:"1918년",
+                    from:"USA"
+                },
+                {url: "https://img4.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202405/24/maxmovie/20240524130001315ontp.jpg",
+                    name:"Thor",
+                    born:"965년",
+                    from:"Ásgarðr | Asgard"
+                },
+                {url: "https://thumb.mtstarnews.com/06/2016/01/2016011210330531201_1.jpg",
+                    name:"Black Panther",
+                    born:"??년",
+                    from:"Wakanda"
+                },
+                {url: "https://www.lego.com/cdn/cs/set/assets/blt81f6da976343c245/Hulk-Sidekick-Tall-1.jpg?fit=crop&format=jpg&quality=80&width=800&height=600&dpr=1",
+                    name:"Hulk",
+                    born:"1969년",
+                    from:"Dayton, Ohio, USA"
+                },
+                {url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX88Jorx0n9Ot11CjhtoA3rAyI8pXp5mb4zA&s",
+                    name:"Hawkeye",
+                    born:"1971년",
+                    from:"USA"
+                }
+            ];
+
+            let characters_list = document.querySelector(".characters_list");
+            for (let i = 0; i < characters.length; i++) {
+                let item = characters[i];
+                let li = document.createElement("li");
+                li.innerHTML = `
+                    <img src="${item.url}">
+                    <p><strong>${item.name}</strong></p>
+                    <p>출생: ${item.born}</p>
+                    <p>출신지: ${item.from}</p>`;
+                characters_list.appendChild(li);
+            }
+        }
+    </script>
+</head>
+<body onload="init()">
+    <ul class="characters_list">
+        <!-- 어벤져스 등장인물 등장 -->
+    </ul>
+</body>
+</html>

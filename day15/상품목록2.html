@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+
+    <script>
+        function init() {
+            alert("init")
+            //서버에 데이터 요청하기
+            let productes = [
+                {
+                    url: "https://item.elandrs.com/r/image/item/2023-07-12/c7f697a9-f34d-4019-afba-5b468fb19cf0.jpg?w=750&h=&q=100",
+                    title: "아크테릭스 패딩",
+                    price: "740000원"
+                }, {
+                    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6HaBiMtvh5UGeeCpJUyJsWRYz8Vn0w7w-Rg&s",
+                    title: "몽클레어 패딩",
+                    price: "1500000원"
+                }, {
+                    url: "https://img2.joongna.com/cafe-article-data/live/2024/02/05/1039049109/1707117604914_000_YAObb_main.jpg",
+                    title: "노스페이스 패딩",
+                    price: "340000원"
+                }
+            ]
+            console.log(productes)
+
+            let product_list = document.querySelector(".product_list")
+            for (let i = 0; i < productes.length; i++) {
+                let item = productes[i];
+                console.log(item)
+
+                let li = document.createElement("li")
+                li.innerHTML = `<img src="${item.url}">
+                <p>${item.title}</p>
+                <p>${item.price}</p>`;
+
+                //부모에 추가하기
+                product_list.appendChild(li);
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="init()">
+    <ul class="product_list">
+        <!-- 자바스크립트로 상품목록 만들기 -->
+    </ul>
+</body>
+
+</html>
