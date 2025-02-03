@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+
+            position: relative;
+        }
+
+        .item{
+            border: 1px solid black;
+
+            position: absolute;  /*사이즈가 컨텐트만큼 줄어든다*/
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);  /* 왼쪽 위로 이동, 자기자신의 50%만큼만 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">요소 정 가운데</div>
+    </div>
+</body>
+</html>

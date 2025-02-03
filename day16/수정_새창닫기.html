@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnOpen">새창열기</button>
+    <button id="btnClose">새창닫기</button>
+
+    <script>
+        const btnOpen = document.getElementById("btnOpen")
+        const btnClose = document.getElementById("btnClose")
+
+        let newWin = null; // 전역 변수로 선언
+
+btnOpen.addEventListener("click", function() {
+    if (!newWin || newWin.closed) { // 창이 없거나 닫혔을 때만 새 창 열기
+        newWin = window.open("https://www.naver.com", "naver", "left=0,top=200,width=400,height=300");
+    }
+});
+
+btnClose.addEventListener("click", function() {
+    if (newWin && !newWin.closed) { // 창이 존재하고 열려 있을 때만 닫기
+        newWin.close();
+        newWin = null; // 닫았으므로 변수 초기화
+    }
+});
+
+    </script>
+</body>
+</html>

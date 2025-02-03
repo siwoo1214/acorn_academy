@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+
+        .product-box:nth-child(3) img{
+            width: 220px;
+        }
+
+        .product-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .product-box{
+            width: 400px;
+            border: 1px solid black;
+            box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+            position: relative;
+            text-align: center;
+        }
+
+        .product-box .product-info{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+
+            background-color: aliceblue;
+            columns: #fff;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .product-box:hover .product-info{
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>상품 히든영역 만들기 연습</h2>
+
+    <ul>
+        <li>일단은 모르지만 머리부터 박고 보자</li>
+    </ul>
+
+    <div class="product-list">
+        <div class="product-box">
+            <img src="https://img.arcteryx.co.kr/3/684603/AJOFMX7302_BLK_view.jpg" alt="아크테릭스 아톰">
+            <!-- 설명이 들어갈 히든영역 -->
+            <div class="product-info">
+                <h3>아크테릭스 아톰</h3>
+                <p>아웃도어, 도심 어디서나 입을 수 있는 전천후 아우터 <br>(가격은 죤내비쌈)</p>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <img src="https://image.production.fruitsfamily.com/public/product/resized%40width1125/0KTuZ05fpl-2B1465B4-BCA1-4666-AD22-532C07C67CF0.jpg" alt="산산기어">
+            <!-- 설명이 들어갈 히든영역 -->
+            <div class="product-info">
+                <h3>산산기어</h3>
+                <p>환절기정도에 입을 수 있는 아우터 <br>(가격은 어느정도 합의가 가능한 정도)</p>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <img src="https://ambient.diskn.com/detailimg/24FW/MEN/coat/IM2D4CT03/melangegrey/MEN-%201444.jpg" alt="인사일런스 코트">
+            <!-- 설명이 들어갈 히든영역 -->
+            <div class="product-info">
+                <h3>인사일런스 코트</h3>
+                <p>미니멀한 코트를 원한다면 인사일런스로</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
