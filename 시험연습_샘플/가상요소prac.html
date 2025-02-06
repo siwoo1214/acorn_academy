@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu-item{
+            position: relative;
+            /* border: 1px solid black; */
+            width: 200px;
+            text-align: center;
+        }
+
+        .menu-item::after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: rebeccapurple;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 0.5s;
+
+        }
+
+        .menu-item:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <p>가상요소 사용해보기</p>
+    <ul>
+        <li class="menu-item">동해물과 백두산이</li>
+        <li class="menu-item">마르고 닳도록</li>
+    </ul>
+</body>
+</html>
